@@ -46,7 +46,9 @@ export function Hero() {
         </a>
       </div>
 
-      <ThreadGrid />
+      <div className="hero-visual">
+        <ThreadGrid />
+      </div>
     </section>
   )
 }
