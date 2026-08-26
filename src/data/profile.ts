@@ -1,7 +1,7 @@
 export const person = {
   name: 'Jhonatan Tacuri',
   role: 'Desarrollador junior — apps móviles, APIs REST y cómputo paralelo',
-  eyebrow: 'Ingeniería en Ciencias de la Computación · UPS Cuenca',
+  eyebrow: 'Ingeniero en Ciencias de la Computación',
   location: 'Cuenca, Ecuador',
   email: 'tacurijhonatan81@gmail.com',
   phone: '+593 99 001 5448',
@@ -15,11 +15,6 @@ export const person = {
 } as const
 
 export const stats = [
-  {
-    value: '1.479×',
-    label: 'Aceleración CUDA vs CPU',
-    detail: 'Filtros de convolución, imágenes ~200 MP',
-  },
   {
     value: '83/100',
     label: 'Promedio acumulado',
