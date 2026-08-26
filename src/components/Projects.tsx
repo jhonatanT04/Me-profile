@@ -29,7 +29,7 @@ export function Projects() {
         ))}
       </div>
 
-      <a className="cv-link" href={person.githubUrl} target="_blank" rel="noreferrer">
+      <a className="cv-link cv-link--static" href={person.githubUrl} target="_blank" rel="noreferrer">
         <IconGithub /> Ver todo en GitHub
       </a>
     </section>

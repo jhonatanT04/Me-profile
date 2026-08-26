@@ -304,6 +304,10 @@ main {
   transform: translate(3px, -3px);
 }
 
+.cv-link--static:hover svg {
+  transform: none;
+}
+
 /* ---------- stats readout ---------- */
 
 .stats-intro {

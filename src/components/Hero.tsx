@@ -1,6 +1,7 @@
 import { person } from '../data/profile'
 import { IconGithub, IconLinkedin, IconMail, IconMapPin, IconPhone } from './icons'
 import { SideNav } from './SideNav'
+import SplitText from './SplitText'
 
 export function Hero() {
   return (
@@ -8,10 +9,16 @@ export function Hero() {
       <div className="hero-copy">
         <div className="hero-top">
           <p className="eyebrow">{person.eyebrow}</p>
-          <h1>
-            Jhonatan
-            Tacuri
-          </h1>
+          <SplitText
+            tag="h1"
+            text="Jhonatan Tacuri"
+            splitType="chars"
+            delay={30}
+            duration={0.8}
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            textAlign="left"
+          />
           <p className="hero-role">Desarrollador junior</p>
           <p className="hero-role">Apps móviles, APIs REST y cómputo paralelo</p>
 
