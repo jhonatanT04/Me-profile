@@ -1,4 +1,5 @@
-import { experience } from '../data/profile'
+import { person, experience } from '../data/profile'
+import { IconDownload } from './icons'
 
 export function Experience() {
   return (
@@ -17,8 +18,12 @@ export function Experience() {
               <li key={bullet}>{bullet}</li>
             ))}
           </ul>
+
         </div>
       </div>
+      <a className="cv-link" href={person.cvUrl} target="_blank" rel="noreferrer">
+        <IconDownload /> View Resume
+      </a>
     </section>
   )
 }

@@ -1,12 +1,12 @@
-import { projects } from '../data/profile'
-import { IconArrowUpRight } from './icons'
+import { person, projects } from '../data/profile'
+import { IconArrowUpRight, IconGithub } from './icons'
 
 export function Projects() {
   return (
     <section className="section" id="proyectos" aria-label="Proyectos">
       <div className="project-list">
         {projects.map((project) => (
-          <article className={`project-row${project.href ? ' has-link' : ''}`} key={project.name}>
+          <article className="project-row" key={project.name}>
             <div className="project-main">
               <p className="project-tag">{project.tag}</p>
               <h3>{project.name}</h3>
@@ -28,6 +28,10 @@ export function Projects() {
           </article>
         ))}
       </div>
+
+      <a className="cv-link" href={person.githubUrl} target="_blank" rel="noreferrer">
+        <IconGithub /> Ver todo en GitHub
+      </a>
     </section>
   )
 }

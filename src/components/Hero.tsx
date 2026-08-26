@@ -1,5 +1,5 @@
 import { person } from '../data/profile'
-import { IconDownload, IconGithub, IconLinkedin, IconMail, IconMapPin, IconPhone } from './icons'
+import { IconGithub, IconLinkedin, IconMail, IconMapPin, IconPhone } from './icons'
 import { SideNav } from './SideNav'
 
 export function Hero() {
@@ -45,10 +45,6 @@ export function Hero() {
               </a>
             </li>
           </ul>
-
-          <a className="cv-button" href={person.cvUrl} download>
-            <IconDownload /> Descargar CV
-          </a>
         </div>
       </div>
     </section>
