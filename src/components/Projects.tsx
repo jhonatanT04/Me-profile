@@ -1,12 +1,16 @@
+import type { CSSProperties } from 'react'
 import { person, projects } from '../data/profile'
+import { useInView } from '../hooks/useInView'
 import { IconArrowUpRight, IconGithub } from './icons'
 
 export function Projects() {
+  const { ref, inView } = useInView<HTMLDivElement>()
+
   return (
     <section className="section" id="proyectos" aria-label="Proyectos">
-      <div className="project-list">
-        {projects.map((project) => (
-          <article className="project-row" key={project.name}>
+      <div className={`project-list${inView ? ' in-view' : ''}`} ref={ref}>
+        {projects.map((project, index) => (
+          <article className="project-row" key={project.name} style={{ '--stagger': index } as CSSProperties}>
             <div className="project-main">
               <p className="project-tag">{project.tag}</p>
               <h3>{project.name}</h3>

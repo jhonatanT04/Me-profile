@@ -147,6 +147,17 @@ main {
   max-width: 620px;
 }
 
+@keyframes hero-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .eyebrow {
   font-family: var(--font-sans);
   font-size: 13px;
@@ -154,6 +165,8 @@ main {
   text-transform: uppercase;
   color: var(--amber);
   margin-bottom: 22px;
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease-out forwards;
 }
 
 .hero h1 {
@@ -172,10 +185,20 @@ main {
   color: var(--paper);
   max-width: 30ch;
   margin-bottom: 18px;
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+.hero-role + .hero-role {
+  animation-delay: 0.45s;
 }
 
 .side-nav {
   margin-top: 32px;
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease-out forwards;
+  animation-delay: 0.6s;
 }
 
 .side-nav ul {
@@ -229,6 +252,9 @@ main {
   font-family: var(--font-sans);
   font-size: 13px;
   color: var(--muted);
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease-out forwards;
+  animation-delay: 0.8s;
 }
 
 .hero-location svg {
@@ -243,6 +269,9 @@ main {
   margin-bottom: 28px;
   font-family: var(--font-sans);
   font-size: 13px;
+  opacity: 0;
+  animation: hero-fade-up 0.6s ease-out forwards;
+  animation-delay: 0.95s;
 }
 
 .contact-row li {
@@ -331,6 +360,17 @@ main {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
+  transition-delay: calc(var(--stagger, 0) * 0.1s);
+}
+
+.stats.in-view .stat {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .stat:first-child {
@@ -429,6 +469,17 @@ main {
 .project-row {
   padding: 40px 0;
   border-top: 1px solid var(--line-soft);
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
+  transition-delay: calc(var(--stagger, 0) * 0.12s);
+}
+
+.project-list.in-view .project-row {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-row:first-child {
