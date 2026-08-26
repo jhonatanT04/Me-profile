@@ -1,5 +1,5 @@
 import { person, experience } from '../data/profile'
-import { IconDownload } from './icons'
+import { IconArrowUpRight } from './icons'
 
 export function Experience() {
   return (
@@ -22,7 +22,7 @@ export function Experience() {
         </div>
       </div>
       <a className="cv-link" href={person.cvUrl} target="_blank" rel="noreferrer">
-        <IconDownload /> View Resume
+        View Resume<IconArrowUpRight /> 
       </a>
     </section>
   )

@@ -296,6 +296,14 @@ main {
   text-decoration: underline;
 }
 
+.cv-link svg {
+  transition: transform 0.2s ease;
+}
+
+.cv-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
 /* ---------- stats readout ---------- */
 
 .stats-intro {
