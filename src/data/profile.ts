@@ -46,22 +46,22 @@ export const experience = {
 
 export const projects = [
   {
-    tag: 'Trabajo de titulación · 2025–2026',
+    tag: 'Desarrollo del un servidor MCP · 2026',
     name: 'Servidor MCP para trazabilidad semántica',
     description:
       'Servidor MCP que conecta código fuente, documentación oficial e historial de GitHub para responder preguntas de trazabilidad sobre bases de código heredadas. Cliente asíncrono de la API de GitHub con httpx y modelos Pydantic, resolviendo redirecciones HTTP 301 y validación de esquemas. Problema validado con entrevistas bajo la metodología MOM Test, delimitando el usuario objetivo a desarrolladores senior que heredan proyectos.',
     stack: ['Python', 'httpx', 'Pydantic', 'MCP'],
-    meta: 'Tutor: Ing. Jairo Sacoto',
-    href: null,
+    meta: 'Trabajo de titulación',
+    href: "https://github.com/jhonatanT04/ProyectoTitulacion-Trazabilidad-sem-ntica-en-GitHub-mediante-un-servidor-MCP",
   },
   {
-    tag: 'Computación en GPU · 2025',
+    tag: 'Computación en GPU · 2026',
     name: 'UPSGlam 3.0 — app social de procesamiento de imágenes',
     description:
       'Arquitectura de microservicios (PyCUDA + Spring WebFlux + Supabase + Flutter) orquestada con Docker Compose sobre imágenes base nvidia/cuda. Frontend móvil en Flutter con Riverpod y sealed classes de Dart 3, incluyendo el módulo completo de autenticación. Filtros de convolución optimizados en CUDA usando memoria global, compartida y constante; con cuFFT y tiling overlap-add alcancé hasta 1.479× de aceleración sobre CPU en imágenes de ~200 megapíxeles.',
     stack: ['Flutter', 'Riverpod', 'Spring WebFlux', 'PyCUDA', 'Docker'],
     meta: 'Proyecto de la asignatura',
-    href: null,
+    href: "https://github.com/jhonatanT04/UPSGlam-3.0",
   },
   {
     tag: 'Proyecto personal · 2026–actualidad',
@@ -118,7 +118,7 @@ export const education = {
 } as const
 
 export const certifications = [
-  { name: 'Gemini para desarrolladores de aplicaciones', issuer: 'Google Cloud', year: '2025' },
+  { name: 'Gemini para desarrolladores de aplicaciones', issuer: 'Google Cloud', year: '2026' },
   { name: 'Build Generative AI Agents with Vertex AI and Flutter', issuer: 'Google Cloud', year: '2025' },
   { name: 'Crea, entrena e implementa modelos de AA con Keras en Google Cloud', issuer: 'Google Cloud', year: '2025' },
 ] as const
@@ -126,11 +126,10 @@ export const certifications = [
 export const languages = 'Español nativo · inglés intermedio-avanzado (lectura técnica y documentación)'
 
 export const competencies =
-  'Trabajo en equipo multidisciplinario, comunicación técnica (informes y defensas orales), atención al detalle.'
+  'Trabajo en equipo multidisciplinario, comunicación técnica, atención al detalle.'
 
 export const nav = [
   { href: '#experiencia', label: 'Experiencia' },
   { href: '#proyectos', label: 'Proyectos' },
   { href: '#habilidades', label: 'Habilidades' },
-  { href: '#contacto', label: 'Contacto' },
 ] as const
