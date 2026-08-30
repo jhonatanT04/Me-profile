@@ -1,6 +1,6 @@
 export const person = {
   name: 'Jhonatan Tacuri',
-  role: 'Desarrollador junior — apps móviles, APIs REST y cómputo paralelo',
+  role: 'Desarrollador junior — APIs REST en Java y Python, interfaces en React, Angular y Flutter',
   eyebrow: 'Ingeniero en Ciencias de la Computación',
   location: 'Cuenca, Ecuador',
   email: 'tacurijhonatan81@gmail.com',
@@ -9,9 +9,9 @@ export const person = {
   linkedinUrl: 'https://linkedin.com/in/jhonatan-tacuri',
   github: 'github.com/jhonatanT04',
   githubUrl: 'https://github.com/jhonatanT04',
-  cvUrl: '/CV_Jhonatan_Tacuri.pdf',
+  cvUrl: '/Jhonatan_Tacuri_CV.pdf',
   summary:
-    'Construyo interfaces en Flutter y servicios backend en FastAPI y Spring Boot. Cuando el rendimiento importa, bajo de nivel hasta CUDA: optimizar un kernel es tan parte del oficio como diseñar una pantalla.',
+    'Construyo APIs REST en Java y Python con autenticación JWT y control de acceso, e interfaces en React, Angular y Flutter. Tengo experiencia de pasantía y sistemas propios sobre PostgreSQL.',
 } as const
 
 export const stats = [
@@ -39,8 +39,8 @@ export const experience = {
   start: 'Oct 2025',
   end: 'Ene 2026',
   bullets: [
-    'Desarrollé pantallas y funcionalidades de una aplicación móvil en Flutter, participando desde el diseño de los mockups hasta la implementación de la interfaz final.',
-    'Revisé y di mantenimiento al backend en Python con FastAPI, verificando el comportamiento de los endpoints REST y su integración con la app móvil.',
+    'Desarrollé pantallas de una aplicación móvil en Flutter, desde el diseño de los mockups hasta la interfaz final y su conexión con la API.',
+    'Diagnostiqué y revisé endpoints REST de un backend en Python con FastAPI, validando contratos de datos e integración con el cliente Flutter.',
   ],
 } as const
 
@@ -64,12 +64,12 @@ export const projects = [
     href: "https://github.com/jhonatanT04/UPSGlam-3.0",
   },
   {
-    tag: 'Proyecto personal · 2026–actualidad',
+    tag: 'Proyecto personal · 2026',
     name: 'Gestión Mecánica — sistema para taller automotriz',
     description:
-      'Solución de tres componentes — aplicación móvil, panel web y API REST — para digitalizar la gestión de clientes, vehículos y órdenes de trabajo de un taller mecánico. API en Python con FastAPI, autenticación por token y pruebas unitarias sobre los endpoints con unittest y TestClient.',
-    stack: ['Flutter', 'React', 'FastAPI'],
-    meta: 'En desarrollo activo',
+      'API REST en Spring Boot sobre 8 entidades de dominio, con Spring Security + JWT, tres roles y migraciones Flyway sobre PostgreSQL en Supabase. El flujo del taller está modelado como una máquina de estados de cinco pasos, con descuento automático de stock al añadir repuestos a una orden y reversión con registro de movimiento al eliminarlos. Dashboard web en React con TypeScript, Vite y Tailwind CSS que consume la API real en los módulos de clientes, órdenes, inventario y usuarios, con vistas restringidas por rol. App móvil de recepción en Flutter con escaneo de placa por OCR desde la cámara para registrar cliente, vehículo y orden inicial.',
+    stack: ['Spring Boot', 'React', 'Flutter', 'Supabase', 'JWT'],
+    meta: 'Proyecto personal',
     href: 'https://github.com/jhonatanT04/GestionMecanica',
   },
 ] as const
@@ -77,30 +77,19 @@ export const projects = [
 export const skills = [
   {
     label: 'Lenguajes',
-    items: ['Python', 'Java', 'Dart', 'JavaScript', 'SQL', 'C/CUDA'],
+    items: ['Java', 'Python', 'TypeScript', 'JavaScript', 'Dart', 'SQL', 'C/CUDA'],
   },
   {
     label: 'Frameworks y librerías',
-    items: [
-      'Spring Boot',
-      'Spring WebFlux',
-      'FastAPI',
-      'Flutter (Riverpod)',
-      'React',
-      'Angular',
-      'TensorFlow',
-      'Keras',
-      'MPI',
-      'PyCUDA',
-    ],
+    items: ['Spring Boot', 'Spring WebFlux', 'Spring Security', 'FastAPI', 'React', 'Angular', 'Flutter', 'PyCUDA'],
   },
   {
     label: 'Bases de datos',
-    items: ['PostgreSQL', 'MySQL', 'Oracle SQL', 'Supabase'],
+    items: ['PostgreSQL', 'MySQL', 'Supabase', 'Flyway'],
   },
   {
     label: 'Herramientas',
-    items: ['Git', 'GitHub', 'Docker', 'Docker Compose', 'Maven', 'Linux', 'VS Code'],
+    items: ['Git', 'GitHub', 'Docker Compose', 'Maven', 'npm', 'Linux', 'VS Code'],
   },
 ] as const
 
@@ -110,20 +99,18 @@ export const education = {
   location: 'Cuenca, Ecuador',
   start: 'Sep 2022',
   end: '2026',
-  detail:
-    'Estudios culminados; trabajo de titulación presentado y aprobado (título en trámite). Promedio general: 83/100.',
+  detail: 'Estudios culminados; trabajo de titulación aprobado (título en trámite). Promedio general: 83/100.',
   highlights:
-    'Computación Paralela y GPU, Bases de Datos, Minería de Datos, Redes, Seguridad de la Información e Inteligencia Artificial.',
-  extra: 'Miembro del grupo ASU "Recicla UPS".',
+    'Bases de Datos, Redes, Seguridad de la Información, Inteligencia Artificial, Minería de Datos, Computación Paralela y GPU.',
 } as const
 
 export const certifications = [
-  { name: 'Gemini para desarrolladores de aplicaciones', issuer: 'Google Cloud', year: '2026' },
+  { name: 'Gemini para desarrolladores de aplicaciones', issuer: 'Google Cloud', year: '2025' },
   { name: 'Build Generative AI Agents with Vertex AI and Flutter', issuer: 'Google Cloud', year: '2025' },
-  { name: 'Crea, entrena e implementa modelos de AA con Keras en Google Cloud', issuer: 'Google Cloud', year: '2025' },
+  { name: 'Modelos de AA con Keras', issuer: 'Google Cloud', year: '2025' },
 ] as const
 
-export const languages = 'Español nativo · inglés intermedio-avanzado (lectura técnica y documentación)'
+export const languages = 'Español nativo · Inglés B2'
 
 export const competencies =
   'Trabajo en equipo multidisciplinario, comunicación técnica, atención al detalle.'

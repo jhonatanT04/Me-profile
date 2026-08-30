@@ -15,7 +15,6 @@ export function EducationCerts() {
             <strong>Materias destacadas — </strong>
             {education.highlights}
           </p>
-          <p className="edu-highlights">{education.extra}</p>
         </div>
 
         <div className="cert-card">
