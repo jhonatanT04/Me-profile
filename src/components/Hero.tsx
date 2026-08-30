@@ -20,7 +20,8 @@ export function Hero() {
             textAlign="left"
           />
           <p className="hero-role">Desarrollador junior</p>
-          <p className="hero-role">APIs REST en Java y Python · Interfaces en React, Angular y Flutter</p>
+          
+          <p className="hero-role">APIs REST en Java y Python<br /> Interfaces en React, Angular y Flutter</p>
 
           <SideNav />
         </div>

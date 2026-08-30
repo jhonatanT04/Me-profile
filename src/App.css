@@ -196,6 +196,7 @@ main {
 
 .side-nav {
   margin-top: 32px;
+  margin-bottom: 32px;
   opacity: 0;
   animation: hero-fade-up 0.6s ease-out forwards;
   animation-delay: 0.6s;
