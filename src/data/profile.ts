@@ -9,7 +9,7 @@ export const person = {
   linkedinUrl: 'https://linkedin.com/in/jhonatan-tacuri',
   github: 'github.com/jhonatanT04',
   githubUrl: 'https://github.com/jhonatanT04',
-  cvUrl: '/Jhonatan_Tacuri_CV.pdf',
+  cvUrl: `${import.meta.env.BASE_URL}Jhonatan_Tacuri_CV.pdf`,
   summary:
     'Construyo APIs REST en Java y Python con autenticación JWT y control de acceso, e interfaces en React, Angular y Flutter. Tengo experiencia de pasantía y sistemas propios sobre PostgreSQL.',
 } as const
